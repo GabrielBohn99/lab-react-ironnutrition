@@ -27,7 +27,7 @@ class FoodBox extends Component {
         console.log(value);
 
         this.setState({
-            quantity: value,
+            quantity: +value,
         })
     }
 
@@ -59,7 +59,7 @@ class FoodBox extends Component {
                             type="number" 
                             value={this.state.quantity}
                             onChange={this.increment}
-                            
+                            min="1"
                         />
                         </div>
                         <div className="control">
